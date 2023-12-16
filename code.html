@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>XLICON</title>
+ <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+ <style>
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://i.imgur.com/m4ymAgc.jpg');
+  background-size: cover; 
+  background-position: center; 
+  font-family: 'Helvetica', sans-serif;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px; /* Adjusted max-width */
+  max-height: 1000px; /* Adjusted max-height */
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Add a semi-transparent white background to make text more readable */
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+
+
+.header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.header h1 {
+  color: #128c7e;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main input {
+  width: calc(100% - 30px); /* Adjusted width */
+  height: 60px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 15px; /* Add padding for a boxy look */
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 0; /* Square off the corners */
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+.main button {
+  padding: 0;
+  background-color: #128c7e;
+  letter-spacing: 0px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-radius: 0; /* Square off the corners */
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+}
+
+#copyb {
+  padding: 0;
+  background-color: #25d366;
+  letter-spacing: 0px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 0; /* Square off the corners */
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+}
+
+#copyb:hover,
+.main button:hover,
+.main input:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+
+
+.main input::placeholder {
+  color: #888;
+}
+
+.main span {
+  position: relative;
+  display: block;
+}
+
+.main i {
+  position: absolute;
+  left: 15px;
+  color: #128c7e;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+</style>
+</head>
+<body>
+ <div class="container">
+  <div class="header">
+   <h1>XLICON BOT PAIRING</h1>
+  </div>
+  <div class="main">
+   <form>
+    <span>
+     <i class="fa fa-user"></i>
+     <input type="number" id="number" placeholder="enter your phone number with country code" name="">
+    </span><br>
+     <button id="submit">submit</button>
+<main id="pair"></main>
+   </form>
+  </div>
+ </div>
+ <link rel="import" href="./loader.html">
+ <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+    ></script>
+    <script>
+       const _0x1995ce=_0x31f8;(function(_0x58500e,_0xc09d5f){const _0x17abeb=_0x31f8,_0x48b7b3=_0x58500e();while(!![]){try{const _0x2dd77b=-parseInt(_0x17abeb(0x1a7))/0x1*(parseInt(_0x17abeb(0x19e))/0x2)+-parseInt(_0x17abeb(0x1a9))/0x3+-parseInt(_0x17abeb(0x1a0))/0x4*(-parseInt(_0x17abeb(0x1ae))/0x5)+parseInt(_0x17abeb(0x1c6))/0x6*(parseInt(_0x17abeb(0x1b2))/0x7)+parseInt(_0x17abeb(0x1ce))/0x8+parseInt(_0x17abeb(0x1bd))/0x9+-parseInt(_0x17abeb(0x1c1))/0xa;if(_0x2dd77b===_0xc09d5f)break;else _0x48b7b3['push'](_0x48b7b3['shift']());}catch(_0x4a73e1){_0x48b7b3['push'](_0x48b7b3['shift']());}}}(_0x102d,0xd1fae));let a=document[_0x1995ce(0x1ba)](_0x1995ce(0x196)),b=document[_0x1995ce(0x1ba)](_0x1995ce(0x1c3)),c=document[_0x1995ce(0x1ba)](_0x1995ce(0x199));async function Copy(){const _0x399027=_0x1995ce,_0xfd8478={'gkCNG':function(_0x1a2650,_0x35b685){return _0x1a2650+_0x35b685;},'kwrfW':function(_0x4edfd6,_0x4b2d43){return _0x4edfd6!==_0x4b2d43;},'SZQzk':_0x399027(0x1b5),'VnvcX':_0x399027(0x1c4),'HzdFj':_0x399027(0x1bc),'JPBfy':_0x399027(0x1bf),'bjnHG':_0x399027(0x1b3),'hFAUV':_0x399027(0x1cb),'LAmnP':function(_0x95fc0c,_0x1bddff,_0x1a8590){return _0x95fc0c(_0x1bddff,_0x1a8590);}};let _0x461ed6=document[_0x399027(0x1ba)](_0xfd8478[_0x399027(0x18b)])[_0x399027(0x195)],_0x225935=document[_0x399027(0x1ba)](_0xfd8478[_0x399027(0x18b)]);await navigator[_0x399027(0x1cc)][_0x399027(0x1c7)](_0x225935[_0x399027(0x195)][_0x399027(0x1c0)](_0xfd8478[_0x399027(0x1c9)],'')),_0x225935[_0x399027(0x195)]=_0x399027(0x1a6),_0x225935[_0x399027(0x1b1)]=_0xfd8478[_0x399027(0x1b4)],_0x225935[_0x399027(0x1c8)]='7',_0xfd8478['LAmnP'](setTimeout,()=>{const _0x506c44=_0x399027,_0x4b7f4a={'QkdGj':function(_0x5de09c,_0x5305dc){return _0xfd8478['gkCNG'](_0x5de09c,_0x5305dc);}};_0xfd8478[_0x506c44(0x192)](_0xfd8478['SZQzk'],_0xfd8478['VnvcX'])?(_0x225935['innerText']=_0x461ed6,_0x225935[_0x506c44(0x1b1)]=_0xfd8478[_0x506c44(0x188)],_0x225935[_0x506c44(0x1c8)]='7'):_0x9446f+=_0x4b7f4a['QkdGj']('\x20',_0xf6f312);},0x1f4);}function _0x31f8(_0x465007,_0x403747){const _0x102dea=_0x102d();return _0x31f8=function(_0x31f864,_0x20ef13){_0x31f864=_0x31f864-0x188;let _0x242db7=_0x102dea[_0x31f864];return _0x242db7;},_0x31f8(_0x465007,_0x403747);}b[_0x1995ce(0x1b0)](_0x1995ce(0x1b8),async _0x37b96d=>{const _0x284a80=_0x1995ce,_0x499cb0={'xFYza':function(_0x3f57b4,_0x5a5316){return _0x3f57b4+_0x5a5316;},'BgjHS':_0x284a80(0x1bc),'HZeji':function(_0x89db76,_0x2c94bc){return _0x89db76==_0x2c94bc;},'lWAOs':function(_0x2be3f6,_0x1095e4){return _0x2be3f6+_0x1095e4;},'niDPz':function(_0x1a63d6,_0x19f58a){return _0x1a63d6==_0x19f58a;},'SwLhZ':function(_0x358fc5,_0x534ee0){return _0x358fc5!==_0x534ee0;},'gfeEd':function(_0x79bf02,_0x6c5cb1){return _0x79bf02==_0x6c5cb1;},'rppan':function(_0xfddca,_0x4e8260){return _0xfddca===_0x4e8260;},'mtFNf':_0x284a80(0x194),'ooKSI':'sBxWs','ZoSDE':function(_0x58db62,_0x4475ae){return _0x58db62+_0x4475ae;},'vvxZZ':function(_0x822a0b,_0x475a64){return _0x822a0b===_0x475a64;},'fNhMj':'XLLWl','ahqYa':_0x284a80(0x19d),'nCjbz':function(_0x19b2d1,_0x2e49ef){return _0x19b2d1===_0x2e49ef;},'WZFoX':_0x284a80(0x193),'eUkWs':function(_0x5b27af,_0x356a73){return _0x5b27af<_0x356a73;},'DwxEl':function(_0x1d4d7f,_0x125622){return _0x1d4d7f!==_0x125622;},'EmPvN':_0x284a80(0x19f),'fiugz':'text','nVTSE':_0x284a80(0x1c5),'GiLoO':function(_0x36b461,_0xee8cc1){return _0x36b461(_0xee8cc1);},'BcPtc':'Service\x20Unavailable'};_0x37b96d[_0x284a80(0x18c)]();if(!c[_0x284a80(0x198)])_0x499cb0[_0x284a80(0x1ca)](_0x499cb0[_0x284a80(0x1a3)],_0x284a80(0x1c2))?_0x5549c7[_0x284a80(0x1aa)]='<a\x20style=\x22color:white;font-weight:bold\x22>enter\x20your\x20whatsapp\x20number\x20with\x20country\x20code</a><br><br>':a[_0x284a80(0x1aa)]=_0x284a80(0x1a1);else{if(_0x499cb0[_0x284a80(0x1b7)](c[_0x284a80(0x198)][_0x284a80(0x1c0)](/[^0-9]/g,'')['length'],0xb))_0x499cb0['DwxEl'](_0x499cb0[_0x284a80(0x18d)],_0x284a80(0x19f))?_0x26513e+=_0x499cb0['xFYza']('\x20',_0x3a3de0):a['innerHTML']=_0x284a80(0x1a4);else{const _0x1d6064=c[_0x284a80(0x198)][_0x284a80(0x1c0)](/[^0-9]/g,'');let _0x36a68f='',_0xbbdce3='';const _0x3b401e=_0x1d6064['split']('');_0x3b401e['map'](_0xd3af4f=>{const _0x372b1d=_0x284a80;if(_0x499cb0[_0x372b1d(0x191)]('pbfIK',_0x372b1d(0x1cf))){_0xbbdce3+=_0xd3af4f;if(_0x499cb0[_0x372b1d(0x19b)](_0xbbdce3[_0x372b1d(0x1d0)],0x3))_0x499cb0[_0x372b1d(0x1be)](_0x499cb0['mtFNf'],_0x372b1d(0x1cd))?_0x4af7e1+=_0x3fde14:_0x36a68f+='\x20'+_0xd3af4f;else _0xbbdce3['length']==0x8?_0x499cb0[_0x372b1d(0x1be)]('VQDou',_0x499cb0[_0x372b1d(0x1b9)])?_0x4661e8[_0x372b1d(0x1aa)]=_0x372b1d(0x1a4):_0x36a68f+=_0x499cb0[_0x372b1d(0x1a2)]('\x20',_0xd3af4f):_0x499cb0[_0x372b1d(0x19c)](_0x499cb0[_0x372b1d(0x19a)],_0x499cb0[_0x372b1d(0x1af)])?(_0x25a870['innerText']=_0x14ea55,_0x4fdbcc[_0x372b1d(0x1b1)]=_0x499cb0[_0x372b1d(0x197)],_0x2e6a35[_0x372b1d(0x1c8)]='7'):_0x36a68f+=_0xd3af4f;}else{_0x42d28d+=_0x17d3bc;if(_0x499cb0[_0x372b1d(0x1bb)](_0x5c7280[_0x372b1d(0x1d0)],0x3))_0x1c6187+=_0x499cb0[_0x372b1d(0x18a)]('\x20',_0xf418a8);else _0x499cb0['niDPz'](_0x5d9253[_0x372b1d(0x1d0)],0x8)?_0x4569a8+=_0x499cb0[_0x372b1d(0x1ac)]('\x20',_0x1babf5):_0x5b611c+=_0x52bd9e;}}),c[_0x284a80(0x18f)]=_0x499cb0[_0x284a80(0x190)],c['value']=_0x499cb0[_0x284a80(0x18a)]('+',_0x36a68f),c['style']=_0x499cb0[_0x284a80(0x1b6)],a['innerHTML']=_0x284a80(0x1a8);let {data:_0x595682}=await _0x499cb0[_0x284a80(0x1ab)](axios,'https://session.guruapi.tech/pair?phone='+_0x1d6064),_0x1fe3bb=_0x595682[_0x284a80(0x189)]||_0x499cb0[_0x284a80(0x1a5)];a['innerHTML']=_0x284a80(0x18e)+_0x1fe3bb+_0x284a80(0x1ad);}}});function _0x102d(){const _0x1697e5=['HzdFj','code','lWAOs','JPBfy','preventDefault','EmPvN','<font\x20id=\x22copy\x22\x20onclick=\x22Copy()\x22\x20style=\x22color:red;font-weight:bold\x22\x20size=\x225\x22>CODE:\x20<span\x20style=\x22color:black;font-weight:bold\x22>','type','fiugz','SwLhZ','kwrfW','yzsdJ','JEbAq','innerText','pair','BgjHS','value','number','fNhMj','gfeEd','vvxZZ','yjOwS','898312oBGmzp','auGhL','180004OJDtlh','<a\x20style=\x22color:white;font-weight:bold\x22>enter\x20your\x20whatsapp\x20number\x20with\x20country\x20code</a><br><br>','ZoSDE','WZFoX','<a\x20style=\x22color:white;font-weight:bold\x22>invalid\x20number\x20format</a><br><br>','BcPtc','CODE\x20COPIED','1rEVwpZ','<a\x20style=\x22color:white;font-weight:bold\x22>Please\x20wait\x20for\x20some\x20time</a><br><br>','4003641sBjsDp','innerHTML','GiLoO','xFYza','</span></font><br><br><br>','110QltuTc','ahqYa','addEventListener','style','6742337mdOmWJ','CODE:\x20','hFAUV','yrHcM','nVTSE','eUkWs','click','ooKSI','getElementById','HZeji','color:black;font-weight:bold','4903992ZmjTNi','rppan','copy','replace','6754040HiRFFX','NGXMX','submit','Olodq','color:black;font-size:20px','6SMJKbs','writeText','size','bjnHG','nCjbz','color:blue;font-weight:bold','clipboard','fBdpJ','6568672zvPovP','VSpqy','length'];_0x102d=function(){return _0x1697e5;};return _0x102d();}
+      </script>
+</body>
+  </html>
